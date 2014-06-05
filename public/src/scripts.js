@@ -1,3 +1,9 @@
+// var cache = {}
+
+// if (!cache['color-div']){
+   //cache['color-div'] = $('.div');
+// }
+
 
 function setEventHandlers(){
 
@@ -14,7 +20,13 @@ function setEventHandlers(){
 }
 
 function displayColorBox(e){
-   var colorBox = $('<div>').addClass('color-box ten columns');
+   if ($('.color-box') != null){
+      // setTimeout(function(){
+         $('.color-box').remove();
+      // },1000) 
+   };
+
+   var colorBox = $('<div>').addClass('color-box ten columns')
    $('.palette-grid').append(colorBox);
 
    var colorBoxArray = $(this).data().colors;

@@ -14,6 +14,37 @@ h1 {
    -webkit-text-stroke-color: #2C2E2E;*/
 }
 
+.palette {
+   -webkit-animation: fadein .75s; /* Safari and Chrome */
+   -moz-animation: fadein .75s; /* Firefox */
+   -ms-animation: fadein .75s; /* Internet Explorer */
+   o-animation: fadein .75s; /* Opera */
+   animation: fadein .75s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}​
+
 .title {
    clear: both;
    font-size: 12px;
@@ -44,6 +75,11 @@ h1 {
    right: 0;
    z-index: 1;
    border: solid 1px darkgrey;
+   -webkit-animation: fadein .75s; /* Safari and Chrome */
+   -moz-animation: fadein .75s; /* Firefox */
+   -ms-animation: fadein .75s; /* Internet Explorer */
+   -o-animation: fadein .75s; /* Opera */
+   animation: fadein .75s;
 }
 
 .color-strip {
